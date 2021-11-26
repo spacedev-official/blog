@@ -7,7 +7,7 @@ sitemap: yes
 tags: [about]
 ---
 
-[kakao](http://www.kakaocorp.com) 기술블로그 입니다.
+SpaceDEV 오피셜 블로그 입니다.
 
-Powered by [GitHub Pages](https://pages.github.com) and [Jekyll](https://jekyllrb.com).
+Powered by [netlify](https://www.netlify.com/), [Jekyll](https://jekyllrb.com) and [kakao 기술블로그 opensource](https://github.com/saltfactory/kakao.github.io) .
 
