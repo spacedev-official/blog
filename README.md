@@ -60,9 +60,13 @@ $ git push origin master
 
 ### 새 글 작성
 
-1. `_draft` 디렉토리에 `적당한이름.md` 이름으로 파일을 만들고
+1. `_drafts` 디렉토리에 `적당한이름.md` 이름으로 파일을 만들고
 2. 포스트를 마크다운으로 작성
-  - gfm 문법, kramdown 파서, rouge 문법강조기 사용
+  - [gfm] 문법, [kramdown] 파서, [rouge] 문법강조기 사용
+3. 확인 
+```
+$ bundle exec jekyll serve --drafts
+```
 
 ### 글 쓰기
 
@@ -94,13 +98,12 @@ $ git push origin master
 
 ### 태그 등록
 
-1. `_tags` 디렉토리에 `tag-name.md` 이름으로 필자 정보 파일 추가
+1. `_tags` 디렉토리에 `tag-name.md` 이름으로 태그 정보 파일 추가
  - 참고: 최종적으로 사용자 포스트 목록 페이지의 url은 http://tech.kakao.com/tags/tag-name/
 2. 파일 상단에 [front matter] 작성
  - layout: tag # 레이아웃(필수)
  - name: `tag-name` # post의 tags 배열의 항목과 매칭(필수). 왠만하면 특수문자없이 영소문자,숫자,-(하이픈),.(점)...만 사용.
  - title: ... # 좀 더 길고 구체적인 설명(필수)
- - image: http://... # 태그 이미지(선택)
 3. 내용은 필요없음
 
 ---
@@ -116,3 +119,17 @@ May the **SOURCE** be with you...
 [kramdown]: http://kramdown.gettalong.org
 [rouge]: http://rouge.jneen.net
 
+
+## License
+
+This software is licensed under the [Apache 2 license](LICENSE.txt), quoted below.
+
+Copyright 2017 Kakao Corp. <http://www.kakaocorp.com>
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this project except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0.
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+### caution
+Kakao fonts(/assets/fonts/) and image(/assets/image/) are only avaiable for Kakao brands.
+> 카카오 폰트(/assets/fonts/)와 이미지(/assets/image/)는 카카오 브랜드용으로 다른 용도로는 이용할 수 없습니다.

@@ -1,11 +1,12 @@
-title: SpaceDEV 블로그
-email: support@spacedev.space
-description: |
-  무한한 우주같은 개발을 지향하는 청소년 개발팀입니다.
+title: Team.꼬리가게 연구소 블로그
+email: https://discord.gg/MSa2h4QqGH
+description:  |
+  Share, 누구나 사용할수있는 오픈소스를 제작하는것이 목표인 팀입니다.
 baseurl: ''
-url: 'https://blog.spacedev.space'
+url: 'http://tech.kakao.com'
+timezone: Asia/Seoul 
 
-repository: spacedev-official/blog
+repository: popop098/kakao.github.io
 
 permalink: /:year/:month/:day/:title/
 
@@ -17,7 +18,7 @@ krandown:
   input: GFM
   highlighter: rouge
 
-gems:
+plugins:
   - jekyll-paginate
 
 paginate: 5
@@ -46,9 +47,9 @@ defaults:
 exclude: [README.md, Gemfile, Gemfile.lock]
 
 keep_files: [assets, files]
-
+github: [metadata]
 # iolo's custom
-author: support@spacedev.space
+author: popop098@naver.com
 image: '/assets/images/default_blog_cover.jpg'
 asset_url: /assets
 #asset_url: //meta-kage.kakaocdn.net/dn/osa/blog/assets
@@ -56,4 +57,4 @@ asset_url: /assets
 twitter:
   username: tfam_is_love
 github_url:
-  username: spacedev-official
+  username: popop098

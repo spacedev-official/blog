@@ -1,6 +1,6 @@
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no"/>
 {% if page.layout == 'post' or page.layout == 'page' %}
 {% assign meta_title = page.title %}
 {% assign meta_author = page.author | default: site.author %}
@@ -19,6 +19,7 @@
 {% unless meta_image contains '://' %}
 {% assign meta_image = meta_image | prepend: site.url %}
 {% endunless %}
+<title>{{ meta_title }}</title>
 <meta name="title" content="{{ meta_title }}" />
 <meta name="author" content="{{ meta_author }}"/>
 <meta name="description" content="{{ meta_description }}"/>
@@ -58,4 +59,9 @@
 <link href="{{ site.asset_url }}/css/monokai.css" rel="stylesheet" type="text/css"/> 
 <link href="{{ site.asset_url }}/lib/magnific-popup.min.css" rel="stylesheet" type="text/css"/>
 <link href="{{ site.asset_url }}/fonts/Kakao.css" rel="stylesheet" type="text/css"/> 
-<link href="{{ site.asset_url }}/css/screen.css" rel="stylesheet" type="text/css"/> 
+<link href="{{ site.asset_url }}/css/screen.css" rel="stylesheet" type="text/css"/>
+<script>
+    if (window.location.host.indexOf('tech.kakao.com') > -1 && window.location.protocol == "https:"){
+        window.location = window.location.toString().replace(/^https:/, "http:");
+    }
+</script>
