@@ -1,12 +1,11 @@
-title: kakao 기술 블로그
-email: opensource@kakaocorp.com
+title: SpaceDEV 블로그
+email: support@spacedev.space
 description: |
-  Connect Everything 새로운 연결, 새로운 세상.
-  연결의 혁신으로 세상은 더욱 가깝고 새로워진다고 카카오는 믿습니다.
+  무한한 우주같은 개발을 지향하는 청소년 개발팀입니다.
 baseurl: ''
-url: 'http://tech.kakao.com'
+url: 'https://blog.spacedev.space'
 
-repository: kakao/kakao.github.io
+repository: spacedev-official/blog
 
 permalink: /:year/:month/:day/:title/
 
@@ -49,7 +48,7 @@ exclude: [README.md, Gemfile, Gemfile.lock]
 keep_files: [assets, files]
 
 # iolo's custom
-author: opensource@kakaocorp.com
+author: support@spacedev.space
 image: '/assets/images/default_blog_cover.jpg'
 asset_url: /assets
 #asset_url: //meta-kage.kakaocdn.net/dn/osa/blog/assets
